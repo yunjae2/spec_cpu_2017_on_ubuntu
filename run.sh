@@ -15,8 +15,7 @@ pushd $SPEC_DIR > /dev/null
 source ./shrc
 cp config/Example-gcc-linux-x86.cfg ./config/config.cfg
 
-logfile=$(runcpu --config=config --noreportable --iterations=1 --action=onlyrun --size=ref $1 | tee /dev/stdout | grep "The log for this run is in " | awk '{print $8}')
-cat $logfile
+runcpu --config=config --noreportable --iterations=1 --action=onlyrun --size=ref $1 | tee >(grep "The log for this run is in " | awk '{print $8}' | xargs cat)
 
 popd > /dev/null
 
