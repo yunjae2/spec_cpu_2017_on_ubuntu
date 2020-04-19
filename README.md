@@ -11,12 +11,12 @@ $ ./extract_spec.sh
 
 Install SPEC CPU 2017.  This would take few minutes.
 ```
-$ ./build.sh
+$ ./install.sh
 ```
 
-Run mcf workload.
+Run mcf_r workload.
 ```
-$ ./run.sh mcf
+$ ./run.sh mcf_r
 ```
 
 
