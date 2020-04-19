@@ -1,0 +1,13 @@
+diff --git a/config/Example-gcc-linux-x86.cfg b/config/Example-gcc-linux-x86.cfg
+index 9e95733..901279e 100644
+--- a/config/Example-gcc-linux-x86.cfg
++++ b/config/Example-gcc-linux-x86.cfg
+@@ -135,7 +135,7 @@ default:
+ #      "Known Limitations with GCC 4"
+ #
+ %ifndef %{gcc_dir}
+-%   define  gcc_dir        /opt/rh/devtoolset-7/root/usr  # EDIT (see above)
++%   define  gcc_dir        /usr  # EDIT (see above)
+ %endif
+ 
+ # EDIT if needed: the preENV line adds library directories to the runtime
