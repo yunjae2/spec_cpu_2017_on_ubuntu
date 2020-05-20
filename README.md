@@ -9,7 +9,12 @@ Extract source code from the iso file.
 $ ./extract_spec.sh
 ```
 
-Install SPEC CPU 2017.  This would take few minutes.
+Apply patch for Ubuntu 18.04.
+```
+$ ./patch-for-ubuntu18.04.sh
+```
+
+Install SPEC CPU 2017.  This would take a few minutes.
 ```
 $ ./install.sh
 ```
